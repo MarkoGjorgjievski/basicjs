@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form>
+        <label>Number:</label>
+        <input type="number" id="dashes">
+        <button type="button" id="dashesBtn">Add dashes between even numbers</button>
+        <p id="dashesSolution"></p>
+    </form>
+    <form id="atm">
+        <p>ATM</p>
+        <p>Choose Option</p>
+        <button type="button" id="deposit" onclick="onBtnClick('deposit')" disabled>deposit</button>
+        <button type="button" id="withdraw" onclick="onBtnClick('withdraw')" disabled>withdraw</button>
+        <button type="button" onclick="onBtnClick('balance')">balance</button>
+        <input type="number" id="amount" onkeyup="stopTyping()"/>
+        
+        <p id="atmResponse"></p>
+    </form>
+    <script src="script.js"></script>
+</body>
+</html>
